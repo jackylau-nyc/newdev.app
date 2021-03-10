@@ -1,23 +1,36 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+    'env': {
+        'commonjs': true,
+        'es6': true,
+        'node': true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "google"
+    'extends': [
+        'eslint:recommended',
+        'plugin:security/recommended'
     ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
+    'globals': {
+        'Atomics': 'readonly',
+        'SharedArrayBuffer': 'readonly'
     },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
+    'parserOptions': {
+        'ecmaVersion': 2020,
+        'sourceType': 'module'
+    },
+    'rules': {
+        'indent': ['error', 4],
+        'no-multi-spaces': ['error'],
+        'semi': ['error', 'always'],
+        'quotes': ['error', 'single'],
+        'brace-style': ['error', 'stroustrup', {'allowSingleLine': true}],
+        'comma-dangle': ['error', 'never'],
+        'no-unused-vars': ['warn'],
+        'no-var': ['error'],
+        'eqeqeq': ['error', 'always'],
+        'arrow-parens': ['error', 'always'],
+        'prefer-destructuring': ['error', {'object': true, 'array': false}],
+        'object-curly-spacing': ['error', 'never'],
+        'key-spacing': ['error', {'afterColon': true}],
+        'comma-spacing': ['error', {'before': false, 'after': true}]
     }
 };
 
