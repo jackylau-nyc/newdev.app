@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# newdev.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Architecture
+
+![System Architecture](https://github.com/jackylau-nyc/newdev.app/blob/349ed46bdbc86344c3d34586f1302c009a432893/Job%20Search%20Architecture.png)
 
 ## Available Scripts
 
